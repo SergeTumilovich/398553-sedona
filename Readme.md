@@ -2,11 +2,6 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Сергей Тумилович](https://up.htmlacademy.ru/htmlcss/18/user/398553).
-=======
-
-* Студент: [Сергей Тумилович](https://up.htmlacademy.ru/htmlcss/18/user/398553).
-* Наставник: `Неизвестно`.
->>>>>>> 2c7e60fb2b916bcfec1ecce2ce37406d13dfcdae
 * Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
