@@ -1,0 +1,8 @@
+/*На данный момент верстается Pixel Perfect для 1200px*/
+body{
+  margin:0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  width:1200px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+}
