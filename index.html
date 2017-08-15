@@ -11,31 +11,32 @@
   <body>
     <!--шапка-->
     <header>
-      <img src="img/logo.png" alt="sedona-logo" width="138" height="70">
-      <ul class="main-menu">
-        <li class="menu-item-left"><a>Информация</a></li>
-        <li class="menu-item-left"><a href="#">Фото и видео<a></li>
-        <li class="menu-item-right"><a href="#">Карта штата<a></li>
-        <li class="menu-item-right"><a href="#">Гостиницы<a></li>
-      </ul>
+      <nav>
+        <img src="img/logo.png" alt="sedona-logo" width="138" height="70">
+        <ul class="main-menu">
+          <li class="menu-item-left"><a>Информация</a></li>
+          <li class="menu-item-left"><a href="#">Фото и видео</a></li>
+          <li class="menu-item-right"><a href="#">Карта штата</a></li>
+          <li class="menu-item-right"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!--Описание-->
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <img src="img/welcome.jpg" alt="sedona-welcome" width="457" height="346">
-        <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <!--Лучше было делать через множественный фон. Не нужен лишний элемент и позиционировать его не надо.-->
-        <div class="mask">
+        <section class="main-lead">
+          <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <!--Может, сделать эту картинку фоном данной секции?.-->
           <img src="img/mask.jpg" alt="mask" width="100%" height="273">
-        </div>
+        </section>
       </section>
       <section class="reason">
-        <h2 class="visually-hidden">Седона - настоящий городок</h2>
         <div class="description">
           <h3>Настоящий городок</h3>
-          <span>— №1 —</span>
+          <span>&ndash; №1 &ndash;</span>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="reason-photo"></div>
@@ -62,10 +63,9 @@
           </ul>
       </section>
       <section class="reason">
-        <h2 class="visually-hidden">Мост дьявола</h2>
         <div class="description">
           <h3>Там есть мост дьявола</h3>
-          <span>— №2 —</span>
+          <span>&ndash; №2 &ndash;</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div class="reason-photo"></div>
@@ -73,23 +73,21 @@
       <!--Секции причин-->
       <section class="other-reasons">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <ul class="small-reasons">
-          <li class="reason-description">
-            <h3>Небольшая площадь</h3>
-            <span>— №3 —</span>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reason-description">
-            <h3>Красивая дорога</h3>
-            <span>— №4 —</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="reason-description">
-            <h3>Мало туристов</h3>
-            <span>— №5 —</span>
-            <p>Большинство едет в Гранд-Каньон и толпится там</p>
-          </li>
-        </ul>
+        <div class="description">
+          <h3>Небольшая площадь</h3>
+          <span>&ndash; №3 &ndash;</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="description">
+          <h3>Красивая дорога</h3>
+          <span>&ndash; №4 &ndash;</span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="description">
+          <h3>Мало туристов</h3>
+          <span>&ndash; №5 &ndash;</span>
+          <p>Большинство едет в Гранд-Каньон и толпится там</p>
+        <div>
       </section>
       <!--Секция поиска-->
       <section class="searchhotel">
@@ -109,30 +107,34 @@
         <li class="facebook"><a href="#">Facebook</a></li>
         <li class="youtube"><a href="#">Youtube</a></li>
       </ul>
-      <p class="copyright">Website by<a href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a></p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><p class="copyright">Website by</p>HTMLAcademy</a>
     </footer>
     <!--Форма поиска-->
     <section class="modal modal-search">
       <h2 class="visually-hidden">Поиск отеля</h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label name="tour">Дата заезда:</label>
-          <input class="search" type="text" name="tour" placeholder="24 апреля 2017">
-          <a class="calendar" href="#"><img src="img/calendar.png" alt="Выбор даты" width="21" height="23"/></a>
+          <label name="tour" for="tour">Дата заезда:</label>
+          <input class="search" type="text" name="tour" id ="tour" placeholder="24 апреля 2017">
+          <a class="calendar" href="#">Календарь</a>
         </p>
         <p>
-          <label name="depart">Дата выезда:</label>
-          <input class="search" type="text" name="depart" placeholder="4 июля 2017">
-          <a class="calendar" href="#"><img src="img/calendar.png" alt="Выбор даты" width="21" height="23"/></a>
+          <label name="depart" for="depart">Дата выезда:</label>
+          <input class="search" type="text" name="depart" id="depart" placeholder="4 июля 2017">
+          <a class="calendar" href="#">Календарь</a>
         </p>
         <p class="horizontal-field">
           <p>
-            <label name="adult">Взрослые:</label>
-            <input class="search" type="number" name="adult" placeholder="2">
+            <label name="adult" for="adult">Взрослые:</label>
+            <button class="btn-increment" type="reset">-</button>
+            <input class="search" type="number" name="adult" id="adult" placeholder="2">
+            <button class="btn-decrement" type="reset">+</button>
           </p>
           <p>
-            <label name="children">Дети:</label>
-            <input class="search" type="number" name="children" placeholder="0">
+            <label name="children" for="children">Дети:</label>
+            <button class="btn-increment" type="reset">-</button>
+            <input class="search" type="number" name="children" id="children" placeholder="0">
+            <button  class="btn-decrement" type="reset">+</button>
           </p>
         </p>
         <button class="btn" type="submit">Найти</button>
