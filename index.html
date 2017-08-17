@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
+
     <meta name="keywords" content="Седона, Аризона, отель, Гранд-Каньон, мост дьявола">
     <meta name="description" content="Седона - лучший отдых в Аризоне! Туры со скидками, предложение ограничено!">
   </head>
@@ -27,10 +28,11 @@
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <img src="img/welcome.jpg" alt="sedona-welcome" width="457" height="346">
         <section class="main-lead">
+          <h2 class="visually-hidden">5 причин крутизны Седоны</h2>
           <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <!--Может, сделать эту картинку фоном данной секции?.-->
-          <img src="img/mask.jpg" alt="mask" width="100%" height="273">
+          <img src="img/mask.jpg" alt="mask" width="1200" height="273"/>
         </section>
       </section>
       <section class="reason">
@@ -84,7 +86,7 @@
           <h3>Мало туристов</h3>
           <span>&ndash; №5 &ndash;</span>
           <p>Большинство едет в Гранд-Каньон и толпится там</p>
-        <div>
+        </div>
       </section>
       <!--Секция поиска-->
       <section class="searchhotel">
@@ -93,6 +95,7 @@
         <a class="btn-search-hotel">Поиск гостиницы в Седоне</a>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Как добраться до Седоны </h2>
         <!--Тут будет карта-->
       </section>
     </main>
@@ -103,7 +106,7 @@
         <a href="#">#VisitSedona</a>
       </section>
       <section class="social">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Седона в соцсетях</h2>
         <ul>
           <li class="twitter"><a href="#">Twitter</a></li>
           <li class="facebook"><a href="#">Facebook</a></li>
@@ -120,29 +123,29 @@
       <h2 class="visually-hidden">Поиск отеля</h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label name="tour" for="tour">Дата заезда:</label>
+          <label for="tour">Дата заезда:</label>
           <input class="search" type="text" name="tour" id ="tour" placeholder="24 апреля 2017">
           <a class="calendar" href="#">Календарь</a>
         </p>
         <p>
-          <label name="depart" for="depart">Дата выезда:</label>
+          <label for="depart">Дата выезда:</label>
           <input class="search" type="text" name="depart" id="depart" placeholder="4 июля 2017">
           <a class="calendar" href="#">Календарь</a>
         </p>
-        <p class="horizontal-field">
+        <div class="horizontal-field">
           <p>
-            <label name="adult" for="adult">Взрослые:</label>
+            <label for="adult">Взрослые:</label>
             <button class="btn-increment" type="reset">-</button>
             <input class="search" type="number" name="adult" id="adult" placeholder="2">
             <button class="btn-decrement" type="reset">+</button>
           </p>
           <p>
-            <label name="children" for="children">Дети:</label>
+            <label for="children">Дети:</label>
             <button class="btn-increment" type="reset">-</button>
             <input class="search" type="number" name="children" id="children" placeholder="0">
             <button  class="btn-decrement" type="reset">+</button>
           </p>
-        </p>
+        </div>
         <button class="btn" type="submit">Найти</button>
       </form>
     </section>
