@@ -18,6 +18,7 @@ body{
   font-family:"PT Sans","Arial",sans-serif;
   font-size: 14px;
   line-height:26px;
+  color: #333;
 }
 
 .visually-hidden{
@@ -29,19 +30,26 @@ body{
 .description h3{
   font-size:21px;
   font-weight:bold;
+  color: white;
+  background:#81b3d2;
 }
 
-.feature-item h3{
+.gray-reason{
+  background: #eee;
+}
+
+.feature-item h3,
+.gray-reason h3,
+.result-description h3{
   font-size:21px;
   font-weight:bold;
+  color:black;
+  background: inherit;
 }
 
 .searchhotel h2{
   font-size:30px;
   font-weight:bold;
   line-height:36px;
-}
-
-.result-description h3{
-  font-size: 21px;
+  color:black;
 }
