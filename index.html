@@ -26,12 +26,11 @@
       <!--Описание-->
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img src="img/sedona-promo.png" alt="sedona-welcome" width="457" height="346">
+        <img class="promo" src="img/sedona-promo.png" alt="sedona-welcome" width="457" height="346">
         <section class="main-lead">
           <h2 class="visually-hidden">5 причин крутизны Седоны</h2>
           <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-          <!--Может, сделать эту картинку фоном данной секции?.-->
           <img src="img/mask.png" alt="mask" width="1200" height="57"/>
         </section>
       </section>
@@ -47,15 +46,15 @@
       <section class="features">
         <h2 class="visually-hidden">Услуги Седоны</h2>
           <ul class="features-items">
-            <li>
+            <li class="feature-item">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li>
+            <li class="feature-item">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li>
+            <li class="feature-item">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
@@ -96,11 +95,14 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как добраться до Седоны </h2>
-        <!--Тут будет карта-->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d550479.5336694083!2d-112.20969093394818!3d34.75201236729284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1503577931571"
+          width="1200" height="474" frameborder="0" style="border:0" allowfullscreen>
+       </iframe>
       </section>
     </main>
     <!--футер-->
-    <footer>
+    <footer class="main-footer">
       <section class="hashtag">
         <h2 class="visually-hidden">Visit Sedona!</h2>
         <a href="#">#VisitSedona</a>
@@ -112,11 +114,11 @@
           <li class="facebook"><a href="#">Facebook</a></li>
           <li class="youtube"><a href="#">Youtube</a></li>
         </ul>
-    </section>
-    <section class="copyright">
-      <h2 class="visually-hidden">Разработано студией HTMLAcademy</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><p>Website by</p>HTMLAcademy</a>
-    </section>
+      </section>
+      <section class="copyright">
+        <h2 class="visually-hidden">Разработано студией HTMLAcademy</h2>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><p>Website by</p>HTMLAcademy</a>
+      </section>
     </footer>
     <!--Форма поиска-->
     <section class="modal modal-search">

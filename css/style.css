@@ -14,8 +14,6 @@ body{
 
 .wrapper{
   margin: 0 auto;
-  /*padding-left: 40px;
-  padding-right: 40px;*/
   width: 1200px;
   background-color: white;
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
@@ -33,16 +31,40 @@ body{
 .main-navigation{
   background-color: white;
   display: flex;
+  justify-content: center;
+  width: 100%;
   height:56px;
+  flex-wrap: wrap;
+}
+
+.main-navigation .logo{
+  order: 1;
+  margin-top: -56px;
 }
 
 .main-menu{
   display: flex;
   list-style: none;
+  width: 100%;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .main-menu li{
   width:240px;
+}
+
+/*отступ для логотипа*/
+.main-menu li:nth-child(2){
+  margin-right: 98px;
+}
+
+.menu-item-left{
+  text-align: left;
+}
+
+.menu-item-right{
+  text-align: right;
 }
 
 .main-menu a{
@@ -75,12 +97,12 @@ body{
   background-size: 100%;
   background-repeat: no-repeat;
 
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.welcome img{
+.welcome .promo{
   display: block;
   margin: 0 auto;
   padding-top: 75px;
@@ -89,11 +111,13 @@ body{
 /*---Lead section---*/
 
 .main-lead{
-  background-color:white;
-  display:flex;
+  background-color: white;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 216px;
+  margin-top: 33px;
 }
 
 .main-lead b{
@@ -107,31 +131,53 @@ body{
 }
 
 .main-lead p{
+  margin-bottom:57px;
   text-transform: uppercase;
+}
+
+.main-lead img{
+  background-color: transparent;
+  order: -1;
+  display: block;
+  margin-top: -57px;
 }
 
 .reason{
   background-color:#81b3d2;
-  display:flex;
+  display: flex;
   height: 255px;
+  color: white;
 }
 
 .reason .description{
-  width: 440px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+
+  width: 440px;
+  text-align: center;
 }
 
 .description h3{
   font-size: 21px;
+  line-height: 21px;
   font-weight: bold;
   color: white;
+  max-width: 152px;
+}
+
+.description p,
+.description span{
+  line-height: 21px;
+  width: 240px;
+
 }
 
 .reason .reason-photo{
   width:760px;
   height: 255px;
+  background-position: 0px center;
 }
 
 .reason:nth-of-type(2) .reason-photo{
@@ -145,26 +191,251 @@ body{
   order: -1;
 }
 
-.gray-reason{
-  background-color: #eee;
+/*---Features---*/
+
+.features-items{
+  padding:0;
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
 }
 
-.feature-item h3,
-.gray-reason h3,
-.result-description h3{
+.feature-item h3{
+  line-height: 21px;
   font-size: 21px;
   font-weight: bold;
   color: black;
-  background-color: inherit;
 }
 
-.features-items{
-  list-style: none;
+.feature-item{
+  width: 400px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-item p{
+  max-width: 290px;
+  margin-bottom: 85px;
+}
+
+.feature-item::before{
+  content:"";
+  width: 80px;
+  height: 74px;
+  margin-top: 62px;
+  background-repeat: no-repeat;
+}
+
+/*иконки для фич*/
+.feature-item:first-child::before{
+  background-image: url("../img/icon-1.svg");
+}
+
+.feature-item:nth-child(2)::before{
+  background-image: url("../img/icon-3.svg");
+}
+
+.feature-item:last-child::before{
+  height:76px;
+  background-image: url("../img/icon-2.svg");
+}
+
+/*---Gray-reason---*/
+.gray-reason{
+  background-color: #eee;
+  color: #333;
+}
+
+.gray-reason h3,
+.result-description h3{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color:black;
+}
+
+
+/*---Search Section---*/
+.searchhotel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .searchhotel h2{
+  margin-top: 65px;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
   color: black;
+}
+
+.searchhotel p{
+  width: 445px;
+}
+
+.btn-search-hotel{
+  width: 570px;
+  height: 86px;
+  box-sizing: border-box;
+  padding-top: 30px;
+
+  background-color: #766357;
+
+  color:white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-search-hotel:hover{
+  background-color: #604e43;
+}
+
+.btn-search-hotel:active{
+  background-color: #503e33;
+  color:rgba(255,255,255,0.3);
+}
+/*---map---*/
+
+.map{
+  height: 474px;
+  background-color: #cbdda9;
+  /*background-image: url("../img/map-temp.jpg");*/
+}
+
+/*---Footer---*/
+.main-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 37px;
+  padding-bottom: 36px;
+}
+
+.hashtag a{
+  font-weight: bold;
+  font-size: 21px;
+  color: black;
+  text-decoration: none;
+}
+
+.social ul{
+  padding: 0;
+  min-width:130px;
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+}
+
+.social a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #81b3d2;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+
+.social a:hover{
+  background-color: #669ec0;
+}
+
+.social a:active{
+  background-color: #5496bd;
+}
+
+.twitter a{
+  background-image: url("../img/twitter.svg");
+}
+
+.facebook a{
+  background-image: url("../img/fb-icon.svg");
+}
+
+.youtube a{
+  background-image: url("../img/youtube.svg");
+}
+
+.copyright a{
+  display: block;
+  font-size: 0px;
+  text-decoration: none;
+  height: 41px;
+  width: 196px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.copyright p{
+  font-size: 14px;
+  color:black;
+}
+
+/*---Search form---*/
+.modal-search{
+  display: none;
+}
+
+/*-------------------Hotels styles--------------------------------------------*/
+.filters{
+  background-color: #31403b;
+  background-image: url("../img/hotels-background.jpg");
+  background-position: 0px center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.results{
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.results-controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 87px;
+}
+
+.results-controls b{
+  font-size: 21px;
+  color: black;
+}
+
+.results-controls p{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.results-ordering{
+  display: flex;
+  list-style: none;
+}
+
+.results-ordering li{
+  margin-right: 30px;
+}
+
+.results-ordering a{
+  text-decoration: none;
+  color: #81b3d2;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.result-items{
+  padding-left: 72px;
+  padding-right: 72px;
+  display:flex;
+  flex-direction:column;
 }
