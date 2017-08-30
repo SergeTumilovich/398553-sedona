@@ -357,9 +357,9 @@ body::after{
 }
 
 .social a svg{
-  display: block;
-  margin: auto;
-  padding-top:10px;
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .social a:active svg{
@@ -400,11 +400,11 @@ body::after{
   height: 40px;
 }
 
-.copyright a:hover svg{
+.copyright a:hover .htmlacademy{
   fill: #81b3d2;
 }
 
-.copyright a:active svg{
+.copyright a:active .htmlacademy{
   fill: #bdbbbc;
 }
 
@@ -487,6 +487,10 @@ body::after{
 
 .search-form input:-moz-input-placeholder{
   color: black;
+}
+
+.search-form input::-webkit-search-cancel-button{
+  display: none;
 }
 
 .search-form input:hover{
@@ -603,10 +607,6 @@ body::after{
   margin-right: 115px;
 }
 
-.filters-form .range-filter{
-  flex-grow: 1;
-}
-
 .filters-form legend{
   text-align: center;
   font-size: 16px;
@@ -641,6 +641,119 @@ body::after{
 
 .filters-form input[type="checkbox"]:checked+.check::before{
   background-image: url("../img/checkbox-on.svg");
+}
+
+.filters-form input[type="checkbox"]:disabled+.check::before{
+
+}
+
+.filters-form .range-filter{
+  width:320px;
+  margin-right: 0px;
+}
+
+.range-filter legend{
+  margin-bottom: 10px;
+}
+
+.range{
+  position: relative;
+  height: 35px;
+  display: flex;
+  vertical-align: middle;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.range label{
+  color: white;
+  line-height: 35px;
+  font-size: 14px;
+  margin-left: 50px;
+}
+
+.range input{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  height: 35px;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  width: 80px;
+  padding-left: 5px;
+}
+
+.range input::-webkit-input-placeholder{
+  color: white;
+}
+
+.range input:-moz-input-placeholder{
+  color: white;
+}
+
+.range::after{
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 2px;
+  height: 30px;
+}
+
+.dial{
+  margin-top: 20px;
+  position: relative;
+}
+
+.dial .dial-back{
+  background-color: rgba(255, 255, 255, 0.3);
+  width:100%;
+  height: 2px;
+}
+
+.dial .dial-front{
+  background-color: white;
+  width: 80%;
+  height: 2px;
+  margin-top: -2px;
+}
+
+.range-min, .range-max{
+  position:absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.range-min:hover,
+.range-max:hover{
+  width: 22px;
+  height: 25px;
+}
+
+.range-max{
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-filter{
+  display: block;
+  margin: 20px auto 0px;
+  width: 135px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 2px;
+
+  color: white;
+}
+
+.btn-filter:hover{
+  background-color: white;
+  color: black;
 }
 
 .results-controls{
@@ -724,26 +837,21 @@ body::after{
   margin-right: 10px;
 }
 
-.order a svg{
+.order a .asc-desc{
   fill: #cacaca;
 }
 
-.order a:hover svg{
+.order a:hover .asc-desc{
   fill: #231f20;
 }
 
-.order a:active svg{
+.order a:active .asc-desc{
   fill: #81b3d2;
 }
 
-/*.order a:first-child{
-  background-image: url("../img/icon-up-dir.svg");
-  margin-right: 10px;
+.order .order-current .asc-desc{
+  fill: #81b3d2;
 }
-
-.order a:last-child{
-  background-image: url("../img/icon-down-dir.svg");
-}*/
 
 /*----Result items---*/
 .result-items{
@@ -785,6 +893,14 @@ body::after{
 .result-description h3{
   margin: 0;
   padding: 0;
+}
+
+.result-description h3:hover{
+  color: #81b3d2;
+}
+
+.result-description h3:active{
+  color: #cacaca;
 }
 
 .result-type p{
@@ -841,23 +957,8 @@ body::after{
 
 .rating .star{
   display: block;
-  min-width:18px;
   height: 16px;
-  background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
   font-size: 0px;
-}
-
-.result-item:last-child .star{
-  width:36px;
-}
-
-.result-item:nth-child(3) .star{
-  width: 54px;
-}
-
-.result-item:nth-child(2) .star{
-  width: 72px;
 }
 
 .rating span{
@@ -869,4 +970,15 @@ body::after{
   color: #666;
   text-align: center;
   padding-top: 3px;
+}
+
+.star span{
+  display: inline-block;
+  margin:0;
+  padding:0;
+  background-color: transparent;
+  background-image: url("../img/star.svg");
+  width: 18px;
+  height: 16px;
+  margin-left: 5px;
 }
