@@ -116,7 +116,7 @@ body::after{
 .welcome .promo{
   display: block;
   margin: 0 auto;
-  padding-top: 75px;
+  padding-top: 77px;
 }
 
 /*---Lead section---*/
@@ -139,7 +139,7 @@ body::after{
   color: black;
   font-size: 21px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .main-lead p{
@@ -166,10 +166,10 @@ body::after{
 .reason .description{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
-  width: 440px;
+  width: 400px;
   text-align: center;
 }
 
@@ -178,20 +178,30 @@ body::after{
   line-height: 21px;
   font-weight: bold;
   color: white;
-  max-width: 152px;
+  width: 180px;
+  margin-top: 47px;
+  margin-bottom: 0px;
 }
 
-.description p,
 .description span{
+  margin: 0;
+  margin-top: 25px;
   line-height: 21px;
-  width: 240px;
+  margin-bottom: 21px;
+}
+
+.description p{/*},
+/*.description span{*/
+  margin: 0;
+  line-height: 21px;
+  width: 280px;
 
 }
 
 .reason .reason-photo{
-  width:760px;
+  width:800px;
   height: 255px;
-  background-position: 0px center;
+  background-position: left center;
 }
 
 .reason:nth-of-type(3) .reason-photo{
@@ -215,6 +225,7 @@ body::after{
 }
 
 .feature-item h3{
+  margin: 25px 0px 20px;
   line-height: 21px;
   font-size: 21px;
   font-weight: bold;
@@ -223,23 +234,24 @@ body::after{
 
 .feature-item{
   width: 400px;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
 }
 
 .feature-item p{
+  margin: 0;
+  margin-bottom: 61px;
   max-width: 290px;
-  margin-bottom: 85px;
 }
 
 .feature-item::before{
   content:"";
   width: 80px;
   height: 74px;
-  margin-top: 62px;
+  margin: 46px auto 0px;
   background-repeat: no-repeat;
 }
 
@@ -282,7 +294,7 @@ body::after{
 }
 
 .searchhotel h2{
-  margin-top: 65px;
+  margin: 52px 0px 10px;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
@@ -291,6 +303,7 @@ body::after{
 
 .searchhotel p{
   width: 445px;
+  margin-bottom: 45px;
 }
 
 .btn-search-hotel{
@@ -319,7 +332,7 @@ body::after{
 /*---map---*/
 
 .map{
-  height: 474px;
+  height: 470px;
   background-color: #cbdda9;
   background-image: url("../img/map-temp.jpg");
 }
