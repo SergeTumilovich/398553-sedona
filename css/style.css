@@ -622,7 +622,7 @@ body{
   display: flex;
   justify-content: space-between;
   padding-top: 24px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .filters-form fieldset{
@@ -691,9 +691,9 @@ body{
   margin-right: 0px;
 }
 
-
 .range-filter legend{
-  margin-bottom: 7px;
+  margin-left: 3px;
+  margin-bottom: 8px;
 }
 
 .range{
@@ -704,6 +704,11 @@ body{
   vertical-align: middle;
   border: 2px solid white;
   border-radius: 2px;
+  margin-left: 2px;
+}
+
+.range-container{
+  width: 155px;
 }
 
 .range label{
@@ -711,6 +716,11 @@ body{
   line-height: 35px;
   font-size: 14px;
   margin-left: 50px;
+  padding-left: 15px;
+}
+
+.range-container:last-of-type label{
+  margin-left: 40px;
 }
 
 .range input{
@@ -720,10 +730,11 @@ body{
   vertical-align: middle;
   height: 35px;
   font-size: 16px;
+  line-height: 35px;
   color: white;
   background-color: transparent;
   border: none;
-  width: 80px;
+  width: 65px;
   padding-left: 5px;
 }
 
@@ -733,6 +744,7 @@ body{
 
 .range input[type="text"]::-moz-input-placeholder{
   color: white;
+  opacity: 1;
 }
 
 .range::after{
@@ -748,6 +760,7 @@ body{
 .dial{
   margin-top: 20px;
   position: relative;
+  left: 2px;
 }
 
 .dial .dial-back{
@@ -760,7 +773,7 @@ body{
   background-color: white;
   width: 80%;
   height: 2px;
-  margin-top: -2px;
+  transform: translateY(-100%);
 }
 
 .range-min, .range-max{
@@ -776,20 +789,21 @@ body{
 }
 
 .range-max{
-  left: 80%;
-  transform: translateY(-50%);
+  left: 79%;
 }
 
 .btn-filter{
   display: block;
-  margin: 30px auto 0px;
+  margin: 30px 0px 0px 88px;
+  padding-left: 11px;
   width: 135px;
-  height: 35px;
+  height: 37px;
   box-sizing: border-box;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 2px;
   color: white;
+  text-transform: uppercase;
 }
 
 .btn-filter:hover{
@@ -797,31 +811,32 @@ body{
   color: black;
 }
 
+/*---Results navigation---*/
 .results-controls{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  box-sizing: border-box;
+  align-items: flex-start;
   min-height: 87px;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding: 0px 72px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .results-controls b{
   font-size: 21px;
   color: black;
+  align-self: center;
 }
 
 .results-controls p{
+  margin: 30px 40px auto -2px;
   font-size: 12px;
   line-height: 18px;
-  margin-right: 40px;
 }
 
 .order-by{
   display: flex;
   flex-grow:1;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 50px;
   padding-top: 5px;
 }
@@ -830,6 +845,7 @@ body{
   display: flex;
   list-style: none;
   padding: 0;
+  margin-top: 25px;
 }
 
 .results-ordering li{
@@ -862,6 +878,7 @@ body{
   display: flex;
   align-items: center;
   font-size: 0px;
+  margin-top: 35px;
 }
 
 .order a{
@@ -873,8 +890,8 @@ body{
   background-repeat: no-repeat;
 }
 
-.order a:first-child{
-  margin-right: 10px;
+.order a:last-child{
+  margin-left: 12px;
 }
 
 .order a .asc-desc{
@@ -897,16 +914,21 @@ body{
 .result-items{
   display:flex;
   flex-direction:column;
+  justify-content: flex-start;
 }
 
-.result-item {
-  box-sizing: border-box;
+.result-item{
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: flex-start;
-  padding:30px 72px;
-  max-height: 150px;
+  box-sizing: border-box;
   border-bottom:1px solid #e5e5e5;
+  min-height: 150px;
+  padding: 0px 72px;
+}
+
+.result-photo{
+  margin-top: 29px;
 }
 
 .result-photo img{
@@ -915,26 +937,28 @@ body{
   padding: 0;
 }
 
-.result-type{
-  display:flex;
-  margin-top: 6px;
-}
-
 .result-description{
   display: flex;
   flex-direction: column;
-  min-height: 90px;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.result-type{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
 }
 
 .result-category{
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .result-category span{
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 .result-description a{
@@ -944,6 +968,7 @@ body{
 .result-description h3{
   margin: 0;
   padding: 0;
+  margin-top: 26px;
 }
 
 .result-description h3:hover{
@@ -952,13 +977,6 @@ body{
 
 .result-description h3:active{
   color: #cacaca;
-}
-
-.result-type p{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
 }
 
 .more{
@@ -1009,6 +1027,7 @@ body{
   display: flex;
   height: 16px;
   font-size: 0px;
+  margin-top: 27px;
 }
 
 .rating span{
@@ -1020,6 +1039,7 @@ body{
   color: #666;
   text-align: center;
   padding-top: 3px;
+  margin-bottom: 30px;
 }
 
 .star span{
