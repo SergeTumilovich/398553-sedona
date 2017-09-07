@@ -331,7 +331,7 @@ body{
 
 /*---map---*/
 .map{
-  height: 470px;
+  height: 590px;
   background-color: #cbdda9;
   background-image: url("../img/map-temp.jpg");
 }
@@ -341,10 +341,20 @@ body{
 }
 
 /*---Footer---*/
+.footer-wrapper{
+  height: 122px;
+}
+
 .main-footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 122px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(255,255,255,.9);
   padding-top: 40px;
   padding-bottom: 36px;
 }
@@ -424,6 +434,10 @@ body{
   fill: #81b3d2;
 }
 
+/*.copyright a:active .htmlacademy{
+  fill: #bdbbbc;
+}*/
+
 .copyright a .htmlacademy:active{
   fill: #bdbbbc;
 }
@@ -450,17 +464,17 @@ body{
   background-color: transparent;
   z-index: 1;
   overflow: hidden;
-    transition-property: height;
-    transition-duration: 0.1s;
-
+  transition-property: height;
+  transition-duration: 0.1s;
+  box-shadow: 0px 7px 15px 0px rgba(0,1,1,0.15);
 }
 
 .search-form{
   margin: 0;
   padding: 29px 0px 0px 57px;
-  position: absolute;
+  /*position: absolute;
   top: 0;
-  right: 0;
+  right: 0;*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -470,7 +484,6 @@ body{
 
   width: 570px;
   background-color: white;
-  box-shadow: 0px 7px 15px 0px rgba(0,1,1,0.15);
 }
 
 .search-form p{
