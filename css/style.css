@@ -32,7 +32,7 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
-  height:56px;
+  height: 56px;
   flex-wrap: wrap;
 }
 
@@ -428,6 +428,7 @@ body{
   fill: #bdbbbc;
 }
 
+
 .copyright p{
   font-size: 14px;
   color:black;
@@ -448,6 +449,10 @@ body{
   align-items: center;
   background-color: transparent;
   z-index: 1;
+  overflow: hidden;
+    transition-property: height;
+    transition-duration: 0.1s;
+
 }
 
 .search-form{
@@ -461,11 +466,7 @@ body{
   justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
-  overflow: hidden;
   height: 394px;
-
-  transition-property: height;
-  transition-duration: 0.1s;
 
   width: 570px;
   background-color: white;
@@ -647,6 +648,7 @@ body{
 .filters-form label{
   display: flex;
   margin-bottom: 23px;
+  -ms-padding-bottom: 2px;
 }
 
 .checkbox{
@@ -654,6 +656,7 @@ body{
 }
 
 .filters-form .check{
+  height: 23px;
   font-size: 14px;
   line-height: 23px;
   color: white;
@@ -664,6 +667,7 @@ body{
   background-image:url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   width: 27px;
+  -ms-height: 24px;
   height: 23px;
   margin-right:13px;
 }
@@ -742,7 +746,7 @@ body{
   color: white;
 }
 
-.range input[type="text"]::-moz-input-placeholder{
+.range input[type="text"]::-moz-placeholder{
   color: white;
   opacity: 1;
 }
@@ -761,6 +765,7 @@ body{
   margin-top: 20px;
   position: relative;
   left: 2px;
+  width: 100%;
 }
 
 .dial .dial-back{

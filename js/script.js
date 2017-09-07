@@ -1,6 +1,6 @@
 
 var link=document.querySelector(".btn-search-hotel");
-var form=document.querySelector(".search-form");
+var form=document.querySelector(".modal-search");
 
 link.addEventListener("click", function(evt){
   evt.preventDefault();
