@@ -424,7 +424,7 @@ body{
   fill: #81b3d2;
 }
 
-.copyright a:active .htmlacademy{
+.copyright a .htmlacademy:active{
   fill: #bdbbbc;
 }
 
