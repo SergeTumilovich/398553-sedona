@@ -593,6 +593,17 @@ body{
   margin-top: 53px;
 }
 
+input::-ms-clear{
+  display: none;
+}
+
+.btn-search:active span,
+.btn-inc:active span{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .btn-inc{
   border:none;
   margin:0;
@@ -680,11 +691,13 @@ body{
 }
 
 .filters-form .check::before{
+  display: inline-block;
   content: "";
   background-image:url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  -ms-width: 27px;
   width: 27px;
-  -ms-height: 24px;
+  -ms-height: 23px;
   height: 23px;
   margin-right:13px;
 }
