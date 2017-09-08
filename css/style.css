@@ -433,18 +433,18 @@ body{
   height: 40px;
 }
 
-.copyright a:hover .htmlacademy path{
+.htmlacademy{
+  fill: #231f20;
+}
+
+.htmlacademy:hover{
   fill: #81b3d2;
 }
 
-.copyright a:active .htmlacademy path{
+.htmlacademy:active {
+  -ms-fill: #bdbbbc;
   fill: #bdbbbc;
 }
-
-/*.copyright a .htmlacademy:active{
-  fill: #bdbbbc;
-}*/
-
 
 .copyright p{
   font-size: 14px;
@@ -576,7 +576,8 @@ body{
   fill: black;
 }
 
-.calendar:active svg{
+.calendar svg:active{
+  -ms-fill: #81b3d2;
   fill: #81b3d2;
 }
 
