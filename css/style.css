@@ -275,6 +275,7 @@ body{
   line-height: 21px;
   font-weight: bold;
   color:black;
+  max-width: 310px;
 }
 
 /*---Search---*/
@@ -521,6 +522,11 @@ body{
   padding-left: 15px;
 }
 
+.people:nth-of-type(2){
+  width: 43px;
+  padding-left: 18px;
+}
+
 .search-form input::-webkit-input-placeholder{
   color: black;
 }
@@ -625,7 +631,7 @@ input::-ms-clear{
 }
 
 .btn-inc:nth-of-type(2){
-  margin-right: 57px;
+  margin-right: 55px;
 }
 
 .form-closed{
@@ -885,6 +891,10 @@ input::-ms-clear{
 
 .results-ordering li{
   margin-right: 30px;
+}
+
+.results-ordering li:last-child{
+  padding-left: 5px;
 }
 
 .results-ordering a{
