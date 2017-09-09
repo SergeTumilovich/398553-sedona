@@ -523,8 +523,13 @@ body{
 }
 
 .people:nth-of-type(2){
-  width: 43px;
-  padding-left: 18px;
+  width: 45px;
+  padding-left: 19px;
+}
+
+.btn-inc span{
+  padding-right: 2px;
+  padding-bottom: 2px;
 }
 
 .search-form input::-webkit-input-placeholder{
