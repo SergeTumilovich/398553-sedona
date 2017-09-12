@@ -97,7 +97,7 @@ body{
 /*---Promo---*/
 .welcome{
   height:507px;
-  background-color: #92bcd8;
+  background-color: #92c7e4;
   background-image: url("../img/sedona-background.jpg");
   background-position: 0px -83px;
   background-size: 100%;
@@ -372,7 +372,8 @@ body{
 }
 
 .hashtag{
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-left: 130px;
 }
 
@@ -386,7 +387,9 @@ body{
 }
 
 .social{
-  margin-left: 35px;
+  display: flex;
+  justify-content: center;
+  margin-left: 32px;
 }
 
 .social ul{
@@ -425,6 +428,8 @@ body{
 }
 
 .copyright{
+  display: flex;
+  justify-content: center;
   margin-right: 100px;
 }
 
@@ -509,7 +514,7 @@ body{
   padding:0;
   box-sizing: border-box;
   color: black;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
