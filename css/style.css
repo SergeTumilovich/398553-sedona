@@ -514,6 +514,9 @@ body{
   padding:0;
   box-sizing: border-box;
   color: black;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -544,10 +547,12 @@ body{
 
 .search-form input::-webkit-input-placeholder{
   color: black;
+  font-weight: bold;
 }
 
 .search-form input[type="text"]::-moz-placeholder{
   color: black;
+  font-weight: bold;
   opacity: 1;
 }
 
@@ -570,6 +575,8 @@ body{
   margin-right: 14px;
   box-sizing: border-box;
   width: 100px;
+  font-size: 14px;
+  line-height: 26px;
   font-weight: bold;
   color: black;
 }
@@ -586,7 +593,7 @@ body{
   font-size: 0px;
   box-sizing: border-box;
   margin-left: -32px;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 .calendar svg{
@@ -777,7 +784,7 @@ input::-ms-clear{
 }
 
 .range-container:last-of-type label{
-  margin-left: 40px;
+  margin-left: 41px;
 }
 
 .range input{
@@ -785,7 +792,8 @@ input::-ms-clear{
   padding: 0;
   display: inline-block;
   vertical-align: middle;
-  height: 35px;
+  height: 33px;
+  font-family: inherit;
   font-size: 14px;
   line-height: 21px;
   color: white;
