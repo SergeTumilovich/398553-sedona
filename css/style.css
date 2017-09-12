@@ -799,7 +799,7 @@ input::-ms-clear{
 /*-------------------Hotels---------------------------------------------------*/
 
 .filters{
-  background-color: #31403b;
+  background-color: #92c7e4;
   background-image: url("../img/hotels-background.jpg");
   background-position: 0px center;
   background-size: 100%;
@@ -2248,13 +2248,10 @@ input::-ms-clear{
 .range input{
   margin: 0;
   padding: 0;
-  margin-top: 0px;
-  display: inline-block;
-  vertical-align: middle;
   height: 32px;
   font-family: inherit;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 34px;
   color: white;
   background-color: transparent;
   border: none;
